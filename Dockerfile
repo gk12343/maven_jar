@@ -2,11 +2,11 @@
 FROM openjdk:17-jdk-slim
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /
 
 # Copy the local .jar file into the container at /app
 # Replace `your-application.jar` with your actual jar file name
-COPY target/hotel_app-0.0.1-SNAPSHOT.jar /app/myapp.jar
+COPY hotel_app-0.0.1-SNAPSHOT.jar /myapp.jar
 
 # Expose the port that your app will listen on
 # Make sure the port matches the one your app uses (e.g., 8080)
